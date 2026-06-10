@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Struktur Organisasi</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .card-hover {
+        transition: 0.3s;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-6px);
+      }
+
+      .modal-enter {
+        animation: fade 0.2s ease;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .scroll-cus::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      .scroll-cus::-webkit-scrollbar-track {
+        background: #e2e8f0;
+        border-radius: 999px;
+      }
+
+      .scroll-cus::-webkit-scrollbar-thumb {
+        background: #14b8a6;
+        border-radius: 999px;
+      }
+
+      .scroll-cus::-webkit-scrollbar-thumb:hover {
+        background: #0f766e;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="min-h-16 py-3 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <a
+              href="https://rsudkudungga.kutaitimurkab.go.id/"
+              class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-slate-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+
+              <span>Kembali</span>
+            </a>
+
+            <div class="w-px h-8 bg-slate-300"></div>
+
+            <div>
+              <h1 class="font-bold text-slate-800">RSUD Kudungga</h1>
+
+              <p class="text-xs text-slate-500">Struktur Organisasi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative overflow-hidden bg-gradient-to-r from-teal-700 via-teal-600 to-emerald-500"
+    >
+      <div
+        class="absolute right-0 top-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 py-16 relative">
+        <div class="max-w-3xl text-white">
+          <div
+            class="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur"
+          >
+            Profil Pejabat Struktural
+          </div>
+
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-5 leading-tight"
+          >
+            Struktur Organisasi
+          </h1>
+
+          <p
+            class="mt-4 text-sm sm:text-base lg:text-lg text-teal-50 leading-relaxed"
+          >
+            Struktur organisasi RSUD Kudungga terdiri dari Direktur, Wakil
+            Direktur, Kepala Bidang, Kepala Bagian, Kepala Seksi dan Kepala
+            Subbagian yang mendukung pelayanan kesehatan bagi masyarakat Kutai
+            Timur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mx-auto px-6 py-10">
+      <!-- DIREKTUR -->
+      <section class="mb-16">
+        <div class="text-center mb-8">
+          <span
+            class="inline-flex px-4 py-2 rounded-full bg-teal-100 text-teal-700 font-medium"
+          >
+            Direktur
+          </span>
+        </div>
+
+        <div id="direktur" class="flex justify-center"></div>
+      </section>
+
+      <!-- WADIR -->
+      <section class="mb-16">
+        <div class="text-center mb-8">
+          <span
+            class="inline-flex px-4 py-2 rounded-full bg-teal-100 text-teal-700 font-medium"
+          >
+            Wakil Direktur
+          </span>
+        </div>
+
+        <div
+          id="wakilDirektur"
+          class="scroll-cus flex gap-4 sm:gap-6 overflow-x-auto px-1 pb-4 snap-x snap-mandatory justify-center"
+        ></div>
+      </section>
+
+      <!-- BIDANG BAGIAN -->
+      <section class="mb-16">
+        <div class="text-center mb-8">
+          <span
+            class="inline-flex px-4 py-2 rounded-full bg-teal-100 text-teal-700 font-medium"
+          >
+            Kepala Bidang & Kepala Bagian
+          </span>
+        </div>
+        <div
+          id="kepalaBidang"
+          class="scroll-cus flex gap-4 sm:gap-6 overflow-x-auto px-1 pb-4 snap-x snap-mandatory"
+        ></div>
+      </section>
+
+      <!-- SEKSI SUBBAG -->
+      <section>
+        <div class="text-center mb-8">
+          <span
+            class="inline-flex px-4 py-2 rounded-full bg-teal-100 text-teal-700 font-medium"
+          >
+            Kepala Seksi & Kepala Subbagian
+          </span>
+        </div>
+        <div
+          id="kepalaSeksi"
+          class="scroll-cus flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory"
+        ></div>
+      </section>
+    </div>
+
+    <!-- MODAL -->
+
+    <div
+      id="modal"
+      class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-4"
+    >
+      <div
+        class="bg-white rounded-[32px] shadow-2xl w-full max-w-3xl overflow-hidden modal-enter"
+      >
+        <!-- HEADER -->
+
+        <div
+          class="bg-gradient-to-r from-teal-700 to-emerald-500 px-8 py-6 text-white"
+        >
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Detail Profil</h3>
+
+            <button id="closeModal" class="text-3xl leading-none">×</button>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="p-8">
+          <div class="flex flex-col md:flex-row gap-8">
+            <img
+              id="modalFoto"
+              class="w-40 h-40 rounded-full object-cover border-4 border-teal-100 mx-auto md:mx-0 shrink-0"
+            />
+
+            <div class="flex-1">
+              <h2 id="modalNama" class="text-3xl font-bold text-slate-800"></h2>
+
+              <p
+                id="modalJabatan"
+                class="text-teal-600 font-semibold mt-2 mb-6"
+              ></p>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-slate-700 mb-2">
+                    Tempat & Tanggal Lahir
+                  </h4>
+
+                  <p id="modalTTL" class="text-slate-600"></p>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-slate-700 mb-2">
+                    Pangkat / Golongan
+                  </h4>
+
+                  <p id="modalPangkat" class="text-slate-600"></p>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="font-semibold text-slate-700 mb-3">
+                  Riwayat Pendidikan
+                </h4>
+
+                <ul id="modalPendidikan" class="space-y-2 text-slate-600"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-5">
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200"
+          >
+            <div class="text-3xl font-bold text-teal-600">1</div>
+            <div class="text-slate-500">Direktur</div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200"
+          >
+            <div class="text-3xl font-bold text-emerald-600">2</div>
+            <div class="text-slate-500">Wakil Direktur</div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200"
+          >
+            <div class="text-3xl font-bold text-cyan-600">6</div>
+            <div class="text-slate-500">Kabid & Kabag</div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200"
+          >
+            <div class="text-3xl font-bold text-slate-700">12</div>
+            <div class="text-slate-500">Kasi & Kasubbag</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
