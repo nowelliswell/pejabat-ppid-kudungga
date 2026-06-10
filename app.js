@@ -57,7 +57,7 @@ const data = {
       foto: "",
     },
     {
-      nama: "Yuliana Kala' Lembang, SE., MM",
+      nama: "Yuliana Kala’ Lembang, SE., MM",
       jabatan: "Kepala Bidang Keperawatan",
       tempat_tanggal_lahir: "Makale, 17 Juli 1969",
       pangkat_golongan: "Pembina / IV/a",
