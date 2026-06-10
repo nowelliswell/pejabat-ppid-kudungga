@@ -1,4 +1,4 @@
-{
+const data = {
   "direktur": [
     {
       "nama": "dr. Muhammad Yusuf, M.Kes",
@@ -9,7 +9,7 @@
         "S1 Kedokteran Umum Universitas Hasanuddin",
         "S2 Magister Kesehatan Universitas Hasanuddin"
       ],
-      "foto": ""
+      "foto": "foto/drYusuf.png"
     }
   ],
   "wakil_direktur": [
@@ -22,7 +22,7 @@
         "S1 Ekonomi Universitas Wijaya Putra",
         "S2 Magister Sains Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/PakEncek.png"
     },
     {
       "nama": "Jumraedah, SE., M.Si",
@@ -33,7 +33,7 @@
         "S1 Ekonomi Universitas STIMI Samarinda",
         "S2 Magister Sains Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/BuJum.png"
     }
   ],
   "kepala_bidang_bagian": [
@@ -45,7 +45,7 @@
       "pendidikan": [
         "S1 Kedokteran Umum Universitas Hang Tuah Surabaya"
       ],
-      "foto": ""
+      "foto": "foto/drIndah.png"
     },
     {
       "nama": "Fitria, SE., M.Si",
@@ -56,7 +56,7 @@
         "S1 Akuntansi STIE Nusantara",
         "S2 Magister Sains Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/Bu Fitri.png"
     },
     {
       "nama": "Yuliana Kala’ Lembang, SE., MM",
@@ -67,7 +67,7 @@
         "S1 Ekonomi Universitas 17 Agustus 1945 Samarinda",
         "S2 Magister Manajemen Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/Bu Yuli.png"
     },
     {
       "nama": "drg. Riza Haniputra, MARS",
@@ -78,7 +78,7 @@
         "S1 Kedokteran Gigi Universitas Airlangga",
         "S2 Magister Administrasi Rumah Sakit Universitas Indonesia"
       ],
-      "foto": ""
+      "foto": "foto/drgRiza.png"
     },
     {
       "nama": "Lisa Komentin S., S.Pi, M.A.P",
@@ -89,7 +89,7 @@
         "S1 Perikanan Universitas Mulawarman",
         "S2 Magister Administrasi Publik Universitas Merdeka Malang"
       ],
-      "foto": ""
+      "foto": "foto/Bu Lisa.png"
     },
     {
       "nama": "Hj. Ika Trisnawati, SE., MAP",
@@ -100,7 +100,7 @@
         "S1 Ekonomi STIE Nusantara Sangatta",
         "S2 Magister Administrasi Publik Universitas Merdeka Malang"
       ],
-      "foto": ""
+      "foto": "foto/Bu Ika.png"
     }
   ],
   "kepala_seksi_subbagian": [
@@ -113,7 +113,7 @@
         "S1 Kedokteran Umum Universitas Muhammadiyah Yogyakarta",
         "S2 Magister Kesehatan Masyarakat Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/drRini.png"
     },
     {
       "nama": "Edi Prayitno, S.Kep., M.H.",
@@ -124,7 +124,7 @@
         "S1 Keperawatan STIKes Muhammadiyah Samarinda",
         "S2 Magister Hukum Universitas Hang Tuah Surabaya"
       ],
-      "foto": ""
+      "foto": "foto/MsEdi.png"
     },
     {
       "nama": "dr. Rakhmadi Sya’ban Nur",
@@ -134,7 +134,7 @@
       "pendidikan": [
         "S1 Kedokteran Umum Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/drRakhmadi.png"
     },
     {
       "nama": "Triyani Nastiti Dwiyantiningdyah, S.Kep., Ns",
@@ -145,7 +145,7 @@
         "S1 Keperawatan STIKes Wiyata Husada Samarinda",
         "Profesi Ners Universitas Kadiri Kediri"
       ],
-      "foto": ""
+      "foto": "foto/MbTri.png"
     },
     {
       "nama": "Hajrah, S.Pd., M.A.P",
@@ -156,7 +156,7 @@
         "S1 Pendidikan Universitas Negeri Makassar",
         "S2 Magister Administrasi Publik Universitas Merdeka Malang"
       ],
-      "foto": ""
+      "foto": "foto/BuHajrah.png"
     },
     {
       "nama": "Inayah, SE",
@@ -166,7 +166,7 @@
       "pendidikan": [
         "S1 Sekolah Tinggi Ilmu Ekonomi Muhammadiyah Samarinda"
       ],
-      "foto": ""
+      "foto": "foto/BuInayah.png"
     },
     {
       "nama": "drg. Riza Haniputra, MARS",
@@ -177,7 +177,7 @@
         "S1 Kedokteran Gigi Universitas Airlangga",
         "S2 Magister Administrasi Rumah Sakit Universitas Indonesia"
       ],
-      "foto": ""
+      "foto": "foto/drgRiza.png"
     },
     {
       "nama": "Ishawati Nur Idris, S.Kep., M.A.P",
@@ -188,7 +188,7 @@
         "S1 Keperawatan STIKES Bina Generasi Polewali Mandar",
         "S2 Magister Administrasi Publik Universitas Merdeka Malang"
       ],
-      "foto": ""
+      "foto": "foto/MbIis.png"
     },
     {
       "nama": "Mutmainnah B., SKM, M.Kes",
@@ -199,7 +199,7 @@
         "S1 Kesehatan Masyarakat Universitas Hasanuddin",
         "S2 Magister Kesehatan Universitas Hasanuddin"
       ],
-      "foto": ""
+      "foto": "foto/BuNanna.png"
     },
     {
       "nama": "Ruth Pabita, SE, M.Si",
@@ -210,7 +210,7 @@
         "S1 Ekonomi Universitas Kristen Indonesia Paulus",
         "S2 Magister Sains Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/BuRuth.png"
     },
     {
       "nama": "Endah Dwi Setianingtyas, S.Si, Apt., M.K.M.",
@@ -221,7 +221,7 @@
         "Profesi Apoteker Universitas Padjadjaran",
         "S2 Magister Kesehatan Masyarakat Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/MbEndah.png"
     },
     {
       "nama": "Nursemah, SE",
@@ -231,7 +231,7 @@
       "pendidikan": [
         "S1 Akuntansi Universitas Mulawarman"
       ],
-      "foto": ""
+      "foto": "foto/BuSema.png"
     }
   ]
 }
